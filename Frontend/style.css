@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0 30px;
+}
+
+.search{
+  display: flex;
+  margin: 3rem 15rem 0 0;
+}
+
+#logo-img{
+  height: 50px;
+  width: 50px;
+}
+
+#logo-text{
+  font-size: 2rem;
+}
+
+#search-bar{
+  background: url("images/searchIcon.svg") no-repeat scroll, 10px, 10px;
+  padding-left: 50px;
+  width: 50rem;
+  height: 50px;
+  font-size: 1.5rem;
+  border: hidden;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px #dbdbdb;
+}
+
+#search-bar:focus{
+  outline: none;
+}
+
+.player-info{
+  position: absolute;
+  top: 15rem;
+  left: 3rem;
+}
+
+.card{
+  width: auto;
+  height: 25rem;
+  box-shadow: 0 4px 15px #dbdbdb;
+  padding: 10px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-username{
+  display: flex;
+  align-items: center;
+}
+
+.image-username img{
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: solid #6c9d41;
+  margin-left: 10px;
+}
+
+.image-username a{
+  margin-left: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  
+}
