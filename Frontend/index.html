@@ -13,7 +13,7 @@
           <span id="logo-text">Chess.com API</span>
       </div>
 
-      <form class="search">
+      <form onsubmit="updateProfileData(); return false;" class="search">
           <input type="text" placeholder="Search" id="search-bar">
       </form>
     </div>
@@ -21,15 +21,17 @@
     <div class="player-info">
       <div class="card">
         <div class="card-body">
-          <div class="profile">
+          <div id="profile" class="profile">
             <div class="image-username">
-              <img src="https://images.chesscomfiles.com/uploads/user/103446240.d27bbbde.78x78o.552806604de9.png" alt="profile image">
-              <a href="#" id="username">aayamshrestha555</a>
+              <img src="./images/questionmark.jpg" alt="profile image">
+              <a href="#" id="username">Username</a>
             </div>
-            <span id="name">Aayam Shrestha</span>
+            <span id="name">Player Name</span>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./script.js" charset="utf-8"></script>
   </body>
 </html>
