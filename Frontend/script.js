@@ -22,7 +22,7 @@ const updateProfileData = async () => {
   } else{
     htmlTemplate = `<div class="image-username">
                            <img src="${profileDataPlayer["avatar"]}" alt="profile image">
-                           <a href="#" id="username">${profileDataPlayer["username"]}</a>
+                           <a target=_blank href="${profileDataPlayer["url"]}" id="username">${profileDataPlayer["username"]}</a>
                         </div>
                         <span id="name">${profileDataPlayer["name"]}</span>
  `;
