@@ -24,8 +24,10 @@ body{
 }
 
 .search{
-  display: flex;
-  margin: 3rem 15rem 0 0;
+  position: relative;
+  top: 1.5rem;
+  right: 5rem;
+  width: auto;
 }
 
 #logo-img{
@@ -93,6 +95,36 @@ body{
 .profile #name{
   display: block;
   position: relative;
-  top: -1rem;
+  top: -1.5rem;
   left: 105px;
+}
+
+.game-info .card{
+  width: 45rem;
+  height: 25rem;
+  box-shadow: 0 4px 15px #dbdbdb;
+  padding: 10px;
+}
+
+.game-info{
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+}
+
+
+.player-info-text{
+  display: block;
+  padding: 10px;
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#country_name{
+  top: 1rem;
+}
+
+#status{
+  top: 2rem;
 }
