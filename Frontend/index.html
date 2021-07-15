@@ -14,23 +14,36 @@
       </div>
 
       <form onsubmit="updateProfileData(); return false;" class="search">
-          <input type="text" placeholder="Search" id="search-bar">
+          <input type="text" placeholder="Enter Username" id="search-bar">
       </form>
     </div>
-
-    <div class="player-info">
-      <div class="card">
-        <div class="card-body">
-          <div id="profile" class="profile">
-            <div class="image-username">
-              <img src="./images/questionmark.jpg" alt="profile image">
-              <a href="#" id="username">Username</a>
+    <div class="info">
+      <div class="player-info">
+        <div class="card">
+          <div class="card-body">
+            <div id="profile" class="profile">
+              <div class="image-username">
+                <img src="./images/questionmark.jpg" alt="profile image">
+                <a href="#" id="username">Username</a>
+              </div>
+              <span id="name">Player Name</span>
+              <span class="player-info-text" id="country_name">Country: </span>
+              <span class="player-info-text" id="status">Status: </span>
             </div>
-            <span id="name">Player Name</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <div class="card">
+          <div class="card-body">
+            <div id="game" class="game">
+            </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <script src="./script.js" charset="utf-8"></script>
   </body>
