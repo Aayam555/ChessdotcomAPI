@@ -22,7 +22,11 @@ const updateProfileData = async () => {
                       </div>
                       <span id="name">${profileDataPlayer["name"]}</span>
                       <span class="player-info-text" id="country_name">Country: ${profileDataPlayer["country_name"]}</span>
-                      <span class="player-info-text" id="status">Status: ${profileDataPlayer["is_online"]}</span>`;
+                      <span class="player-info-text" id="status">Status: ${profileDataPlayer["is_online"]}</span>
+                      <span class="player-info-text" id="streamer">Is streamer: ${profileDataPlayer["is_streamer"]} </span>
+                      <span class="player-info-text" id="followers">followers: ${profileDataPlayer["followers"]}</span>
+
+                    `;
 
     } else if (not_found){
       htmlTemplate = `<div class="image-username">
@@ -31,7 +35,11 @@ const updateProfileData = async () => {
                       </div>
                       <span id="name">Not Found</span>
                       <span class="player-info-text" id="country_name">Country: Not Found</span>
-                      <span class="player-info-text" id="status">Status: Not Found</span>`;
+                      <span class="player-info-text" id="status">Status: Not Found</span>
+                      <span class="player-info-text" id="streamer">Is streamer: Not Found</span>
+                      <span class="player-info-text" id="followers">followers: Not Found</span>
+
+                      `;
 
     } else{
     htmlTemplate = `<div class="image-username">
@@ -40,7 +48,11 @@ const updateProfileData = async () => {
                     </div>
                     <span id="name">${profileDataPlayer["name"]}</span>
                     <span class="player-info-text" id="country_name">Country: ${profileDataPlayer["country_name"]}</span>
-                    <span class="player-info-text" id="status">Status: ${profileDataPlayer["is_online"]}</span>`;
+                    <span class="player-info-text" id="status">Status: ${profileDataPlayer["is_online"]}</span>
+                    <span class="player-info-text" id="streamer">Is streamer: ${profileDataPlayer["is_streamer"]}</span>
+                    <span class="player-info-text" id="followers">followers: ${profileDataPlayer["followers"]}</span>
+                    
+                    `;
 
     }
     return htmlTemplate;
