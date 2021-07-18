@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chessdotcom API</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/showProfileOnly.css">
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="logo">
+          <img id="logo-img" src="./images/favicon.png" alt="logo" width="71" height="78">
+          <span id="logo-text">Chess.com API</span>
+      </div>
+
+      <form onsubmit="updateProfileData(); return false;" class="search">
+          <input type="text" placeholder="Enter Username" id="search-bar">
+      </form>
+    </div>
+    <div class="info">
+      <div class="player-info">
+        <div class="card">
+          <div class="card-body">
+            <div id="profile" class="profile">
+              <div class="image-username">
+                <img src="./images/questionmark.jpg" alt="profile image">
+                <a href="#" id="username">Username</a>
+              </div>
+              <span id="name">Player Name</span>
+              <span class="player-info-text" id="country_name">Country: </span>
+              <span class="player-info-text" id="status">Status: </span>
+              <span class="player-info-text" id="streamer">Is streamer: </span>
+              <span class="player-info-text" id="followers">followers: </span>
+            </div>
+            <button onclick="showProfile()" type="button" id="showProfile">Show Profile Only</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <div class="card">
+          <div class="card-body">
+            <div id="game" class="game">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./js/playerProfileData.js" charset="utf-8"></script>
+    <script src="./js/showProfileOnly.js" charset="utf-8"></script>
+  </body>
+</html>

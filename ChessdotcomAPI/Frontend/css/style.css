@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0 30px;
+}
+
+.search{
+  position: relative;
+  top: 1.5rem;
+  right: 5rem;
+  width: auto;
+}
+
+#logo-img{
+  height: 50px;
+  width: 50px;
+}
+
+#logo-text{
+  font-size: 2rem;
+}
+
+#search-bar{
+  /* background: url("images/searchIcon.svg") no-repeat scroll, 10px, 10px; */
+  padding-left: 50px;
+  width: 50rem;
+  height: 50px;
+  font-size: 1.5rem;
+  border: hidden;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px #e4e4e4;
+}
+
+#search-bar:focus{
+  outline: none;
+}
+
+.player-info{
+  position: absolute;
+  top: 15rem;
+  left: 3rem;
+}
+
+.player-info .card{
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 0 4px 15px #e4e4e4;
+  padding: 10px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-username{
+  display: flex;
+  align-items: center;
+}
+
+.image-username img{
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: solid #6c9d41;
+  margin-left: 10px;
+}
+
+.image-username a{
+  margin-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.profile #name{
+  display: block;
+  position: relative;
+  top: -1.5rem;
+  left: 105px;
+}
+
+.game-info .card{
+  width: 45rem;
+  height: 25rem;
+  box-shadow: 0 4px 15px #e4e4e4;
+  padding: 10px;
+}
+
+.game-info{
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+}
+
+
+.player-info-text{
+  display: block;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+
+#showProfile{
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 100px;
+  color: #6c9d41;
+  background-color: white;
+  border: 2px solid #6c9d41;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#showProfile:hover{
+  color: white;
+  background-color: #6c9d41;
+  border: 2px solid #6c9d41;
+}
