@@ -40,7 +40,7 @@ body{
 }
 
 #search-bar{
-  background: url("images/searchIcon.svg") no-repeat scroll, 10px, 10px;
+  /* background: url("images/searchIcon.svg") no-repeat scroll, 10px, 10px; */
   padding-left: 50px;
   width: 50rem;
   height: 50px;
@@ -120,4 +120,22 @@ body{
   margin-left: 1rem;
   text-align: left;
   font-size: 1.2rem;
+}
+
+
+#showProfile{
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 100px;
+  color: #6c9d41;
+  background-color: white;
+  border: 2px solid #6c9d41;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#showProfile:hover{
+  color: white;
+  background-color: #6c9d41;
+  border: 2px solid #6c9d41;
 }

@@ -5,6 +5,7 @@
     <title>Chessdotcom API</title>
     <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/showProfileOnly.css">
   </head>
   <body>
     <div class="navigation">
@@ -32,6 +33,7 @@
               <span class="player-info-text" id="streamer">Is streamer: </span>
               <span class="player-info-text" id="followers">followers: </span>
             </div>
+            <button onclick="showProfile()" type="button" id="showProfile">Show Profile Only</button>
           </div>
         </div>
       </div>
@@ -48,5 +50,6 @@
 
 
     <script src="./js/playerProfileData.js" charset="utf-8"></script>
+    <script src="./js/showProfileOnly.js" charset="utf-8"></script>
   </body>
 </html>
